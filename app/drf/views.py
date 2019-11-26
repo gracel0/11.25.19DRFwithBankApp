@@ -3,15 +3,15 @@
 
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from drf.serializers import UserSerializer, GroupSerializer, BranchSerializer
-from bank.models import Branch
+from drf.serializers import UserSerializer, GroupSerializer #BranchSerializer
+#from bank.models import Branch
 
-class BranchViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows branches to be viewed or edited.
-    """
-    queryset = Branch.objects.all()
-    serializer_class = BranchSerializer
+# class BranchViewSet(viewsets.ModelViewSet):
+#     """
+#     API endpoint that allows branches to be viewed or edited.
+#     """
+#     queryset = Branch.objects.all()
+#     serializer_class = BranchSerializer
 
 class UserViewSet(viewsets.ModelViewSet):
     """
